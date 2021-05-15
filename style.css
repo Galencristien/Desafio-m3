@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-header {
+  margin-top: 110px;
+}
+@media (min-width: 770px) {
+  .contenedor-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.nav {
+  position: fixed;
+  background-color: #dfdfdf;
+  width: 100%;
+  height: 110px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.menu-li {
+  padding: 10px;
+  margin-top: 120px;
+  color: black;
+}
+.logo-nav {
+  width: 95px;
+  height: 95px;
+}
+
+.nav-li {
+  display: none;
+}
+@media (min-width: 770px) {
+  .nav-li {
+    display: flex;
+    margin: 30px;
+  }
+  .nav-ul {
+    display: flex;
+  }
+}
+.button-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .button-nav {
+    display: none;
+  }
+}
+
+.imagen-header {
+  padding-top: 58px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+}
+.foto {
+  width: 318px;
+  height: 300px;
+  margin-bottom: 0;
+}
+.titulo-header {
+  text-align: center;
+  padding-top: 60px;
+  width: 291px;
+  height: 96px;
+  margin: auto;
+}
+
+.contenedor-presentacion {
+  min-height: 538px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 770px) {
+  .contenedor-presentacion {
+    flex-direction: row;
+  }
+}
+.logo-tilde {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: green 5px dashed;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.tilde {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+.presentacion {
+  text-align: center;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media (min-width: 770px) {
+  .presentacion {
+    max-width: 532px;
+  }
+}
+.titulo-presentacion {
+  font-size: 32px;
+}
+
+.contenedor-servicios {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+}
+@media (min-width: 770px) {
+  .contenedor-servicios {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.titulo-servicios {
+  text-align: center;
+  font-size: 32px;
+}
+@media (min-width: 770px) {
+  .titulo-servicios {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+.h1-servicios {
+  font-size: 24px;
+  font-family: "roboto", sans-serif;
+}
+.h2-servicios {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+}
+.imagen-servicios {
+  width: 138px;
+  height: 128px;
+}
+.section-formulario {
+  background-color: black;
+}
+.titulo-formulario {
+  text-align: center;
+}
+@media (min-width: 770px) {
+  .titulo-formulario {
+    padding-top: 10px;
+    margin-right: 20px;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+}
+.contenedor-formulario {
+  margin: auto;
+  padding: 40px 0;
+  width: 335px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 770px) {
+  .contenedor-formulario {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+.contenedor-nombre-formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contenedor-email-formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contenedor-textarea-formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.label-formulario {
+  margin-top: 30px;
+}
+.boton-formulario {
+  background-color: #ffd953;
+  margin-top: 60px;
+  height: 45px;
+  width: 335px;
+  border-radius: 4px;
+}
+footer {
+  background-color: #dbdbdb;
+}
+.contenedor-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 493px;
+  justify-content: space-around;
+}
+.contenedor-foo {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+.contenedor-foo > a {
+  text-align: center;
+  font-size: 25px;
+}
+.contenedor-foo > i {
+  font-size: 50px;
+  margin: 15px;
+}
