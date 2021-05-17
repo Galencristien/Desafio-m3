@@ -16,6 +16,7 @@ header {
 }
 @media (min-width: 770px) {
   .contenedor-header {
+    max-width: 850px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -242,6 +243,17 @@ footer {
   height: 493px;
   justify-content: space-around;
 }
+@media (min-width: 770px) {
+  .contenedor-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 60px 60px 60px;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    margin: auto;
+    max-width: 850px;
+  }
 .contenedor-foo {
   display: flex;
   align-items: center;
@@ -256,4 +268,26 @@ footer {
 .contenedor-foo > i {
   font-size: 50px;
   margin: 15px;
+}
+.contenedor-foo > img {
+  font-size: 50px;
+  margin: 15px;
+}
+@media (min-width: 770px) {
+  .contenedor-logo-foo {
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .contenedor-foo > a {
+    text-align: center;
+    font-size: 10px;
+  }
+  .contenedor-foo > i {
+    font-size: 20px;
+    margin: 15px;
+  }
+  .contenedor-foo > img {
+    font-size: 20px;
+    margin: 15px;
+  }
 }
