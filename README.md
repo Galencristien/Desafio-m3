@@ -1,1 +1,1 @@
-https://galencristien.github.io/desafio-m3/
+https://galencristien.github.io/desafio-modulo-3/
